@@ -2,6 +2,7 @@
     /* *
      * Metodo para prevenir/suprimir a entrada de caracteres especificos atraves do teclado 
      * @author Edson Luis Isele
+     * @version 1.01
      * @since 30/03/2016
      * Obs.: metodo concebido originalmente com a utilizacao de JQuery e Javascript
      */

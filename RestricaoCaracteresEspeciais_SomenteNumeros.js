@@ -23,6 +23,7 @@
         
         prevntNumeric(e, $this, teclas); /* faz a chamada do metodo */
     });
+    
     /* metodo para previnir/suprimir a entrada de caracteres especificos atraves do teclado */
     function prevntNumeric(event, seletor, teclas) {
         var val = seletor.val();

@@ -1,5 +1,10 @@
-<script>    
-    /* Obs.: o metodo descrito a seguir foi concebido originalmente com a utilizacao de JQuery e Javascript */
+<script>
+    /* *
+     * Metodo para prevenir/suprimir a entrada de caracteres especificos atraves do teclado 
+     * @author Edson Luis Isele
+     * @since 30/03/2016
+     * Obs.: metodo concebido originalmente com a utilizacao de JQuery e Javascript
+     */
 
     /* define a acao iniciada pelo evento keydown relacionado ao seletor, nesse caso o input com a propriedade name igual a cbxTempoPadrao */
     $('input[name=cbxTempoPadrao]').keydown(function(e) {

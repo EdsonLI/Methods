@@ -1,4 +1,6 @@
-<script>   
+<script>    
+    /* Obs.: o metodo descrito a seguir foi concebido originalmente com a utilizacao de JQuery e Javascript */
+
     /* define a acao iniciada pelo evento keydown relacionado ao seletor, nesse caso o input com a propriedade name igual a cbxTempoPadrao */
     $('input[name=cbxTempoPadrao]').keydown(function(e) {
         //console.info('chamou keydown'+e.which);

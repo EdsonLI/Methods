@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-	<body>
-		<p>The test() method returns true if it finds a match, otherwise it returns false.</p>
+   <body>
+	<p>The test() method returns true if it finds a match, otherwise it returns false.</p>
 
-		<button onclick="timeTest('23:59')">Validar Horário</button>
+	<button onclick="timeTest('23:59')">Validar Horário</button>
 
-		<p id="demo"></p>
-	</body>
+	<p id="demo"></p>
+   </body>
 </html>
 <script>
-	function timeTest($hr) {
-    	//var timeTest = /^([0-9]|0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$/;
-		//var timeTest = /^([0-9]|0[0-9]|1[0-9]|2[0-3]):[0-5]?[0-9]$/;
-        var timeTest = /^(?:\d|[01]\d|2[0-3]):[0-5]\d$/;
-		var res = timeTest.test($hr);
-		
-		document.getElementById("demo").innerHTML = res;
-	}
+   function timeTest($hr) {
+      //var timeTest = /^([0-9]|0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$/;
+      //var timeTest = /^([0-9]|0[0-9]|1[0-9]|2[0-3]):[0-5]?[0-9]$/;
+      var timeTest = /^(?:\d|[01]\d|2[0-3]):[0-5]\d$/;
+      var res = timeTest.test($hr);
+      document.getElementById("demo").innerHTML = res;
+   }
 </script>
 
 /* Logic:

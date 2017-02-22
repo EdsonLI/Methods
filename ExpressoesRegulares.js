@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 	<body>
 		<p>The test() method returns true if it finds a match, otherwise it returns false.</p>
-		<p>Click the button to search a string for the character "e".</p>
 
 		<button onclick="timeTest('23:60')">Validar Horário</button>
 

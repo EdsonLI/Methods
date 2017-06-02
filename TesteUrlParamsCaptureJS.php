@@ -2,6 +2,9 @@
 <html>
   <body>
     <script>
+      /* Documentação URLSearchParams: https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams */
+
+
       /* Supondo que a url seja: http://localhost/teste/testeUrlParamsCaptureJS.php?situacao=dashboard&acao=qualquer */
       let urlParams = new URLSearchParams(window.location.search);
 

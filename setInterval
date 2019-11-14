@@ -1,37 +1,9 @@
 <!DOCTYPE html>
 <html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <body>
 
-<p>Click the button to wait 3 seconds, then alert "Hello".</p>
-<p>After clicking away the alert box, an new alert box will appear in 3 seconds. This goes on forever...</p>
-<button onclick="myFunction('start')">Try it</button>
-<button onclick="myFunction('stop')">Stop</button>
-
-<script>
-var interval = null;
-
-function myFunction(th) {
-  if(th === 'start'){
-    interval = setInterval(function(){ console.log("Hello"); }, 3000);    
-  }
-  if(th === 'stop'){
-    clearInterval(interval);
-  }
-}
-</script>
-
-</body>
-</html>
-
-<!---------------------------------------------------------------------------------------------------------------->
-
-<!DOCTYPE html>
-<html>
-<body>
-
-<p>Click the button to wait 3 seconds, then alert "Hello".</p>
-<p>After clicking away the alert box, an new alert box will appear in 3 seconds. This goes on forever...</p>
-<button onclick="myFunction('start')">Try it</button>
+<button onclick="myFunction('start')" id="start">Try it</button>
 <button onclick="myFunction('stop')">Stop</button>
 
 <script>
@@ -39,14 +11,16 @@ var interval = null;
 var contador = 0;
 
 function myFunction(th) {
-  if(th === 'start'){  	
+  if(th === 'start'){
+  	$("#start").prop('disabled', true);
     interval = setInterval(function(){ 
-    	contador++;
-    	console.log(contador);
-    }, 1000);    
+      contador++;
+      console.log(contador);
+    }, 1000);
   }
   if(th === 'stop'){
     clearInterval(interval);
+    $("#start").prop('disabled', false);
   }
 }
 </script>

@@ -35,8 +35,6 @@ function myFunction(th) {
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <body>
 
-<p>Click the button to wait 3 seconds, then alert "Hello".</p>
-<p>After clicking away the alert box, an new alert box will appear in 3 seconds. This goes on forever...</p>
 <button onclick="myFunction('start')" id="start">Try it</button>
 <button onclick="myFunction('stop')">Stop</button>
 
